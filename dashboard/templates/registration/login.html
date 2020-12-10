@@ -1,0 +1,14 @@
+{% extends 'dashboard/base_login.html' %}
+
+{% block content %}
+    <div class="form">
+        <p>LOGIN</p>
+        <form action="." method="post">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="usuário">
+            <input type="password" name="password" value="password">
+            <button>entrar</button>
+            <p class="message">Não é registrado? <a href="#"> Cadastre-se</a></p>
+        </form>
+    </div>
+{% endblock %}

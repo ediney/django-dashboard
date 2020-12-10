@@ -1,0 +1,32 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Título do post{% endblock %}
+
+{% block content %}
+
+    <div id="container-stepper">
+
+        <div class="stepper">
+
+            <div class="step active-step">
+                <span class="step-number">1</span>
+                <span class="step-title">Step 1</span>
+            </div>
+            <span class="progress"></span>
+            <div id="step">
+                <span class="step-number">2</span>
+                <span class="step-title">Step 2</span>
+            </div>
+            <span class="progress"></span>
+            <div class="step">
+                <span class="step-number">3</span>
+                <span class="step-title">And... Step 3</span>
+            </div>
+        </div>
+        <div>
+            <button id="prev">Prev Step</button>
+            <button id="next">Next Step</button>
+        </div>
+        <script type="text/javascript" src="dashboard/static/js/stepper.js"></script>
+    </div>
+
+{% endblock %}

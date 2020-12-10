@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <!--wrapper start-->
+    <div class="wrapper">
+        <!--header menu start-->
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">Django <span>DASH</span></div>
+                <div class="sidebar-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                    <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--header menu end-->
+
+        <!--sidebar start-->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <center class="profile">
+                    <img src="../static/images/1.jpg" alt="">
+                    <p>Jessica</p>
+                </center>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-desktop"></i><span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="item" id="layout">
+                    <a href="#layout" class="menu-btn">
+                        <i class="fas fa-columns"></i><span>Layout <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="../dashboard/templates/dashboard/layout/stepper.html"><span> Stepper</span></a>
+                        <a href="#"><span> List</span></a>
+                        <a href="#"><span> Infinite List</span></a>
+                        <a href="#"><span> Accordion</span></a>
+                        <a href="#"><span> Tabs</span></a>
+                    </div>
+                </li>
+                <li class="item" id="forms">
+                    <a href="#forms" class="menu-btn">
+                        <i class="fas fa-edit"></i><span>Forms <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span> Form Inputs</span></a>
+                        <a href="#"><span> Form Layouts</span></a>
+                        <a href="#"><span> Buttons</span></a>
+                        <a href="#"><span> Datepicker</span></a>
+                    </div>
+                </li>
+                <li class="item" id="uifeatures">
+                    <a href="#uifeatures" class="menu-btn">
+                        <i class="fas fa-th"></i><span>UI Features <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span> Grid</span></a>
+                        <a href="#"><span> Icons</span></a>
+                        <a href="#"><span> Typography</span></a>
+                        <a href="#"><span> Animated Searches</span></a>
+                    </div>
+                </li>
+                <li class="item" id="modal-overlays">
+                    <a href="#modal-overlays" class="menu-btn">
+                        <i class="far fa-list-alt"></i><span>Modal & Overlays <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span> Dialog</span></a>
+                        <a href="#"><span> Window</span></a>
+                        <a href="#"><span> Popover</span></a>
+                        <a href="#"><span> Toastr</span></a>
+                        <a href="#"><span> Tooltip</span></a>
+                    </div>
+                </li>
+                <li class="item" id="extracomponents">
+                    <a href="#extracomponents" class="menu-btn">
+                        <i class="far fa-comment-dots"></i><span>Extra Components <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span> Calendar</span></a>
+                        <a href="#"><span> Progress Bar</span></a>
+                        <a href="#"><span> Spinner</span></a>
+                        <a href="#"><span> Alert</span></a>
+                        <a href="#"><span> Calendar Kit</span></a>
+                        <a href="#"><span> Chat</span></a>
+                    </div>
+                </li>
+                <li class="item" id="maps">
+                    <a href="#maps" class="menu-btn">
+                        <i class="far fa-map"></i><span>Maps <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span> Leaflet Maps</span></a>
+                    </div>
+                </li>
+                <li class="item" id="charts">
+                    <a href="#charts" class="menu-btn">
+                        <i class="fas fa-chart-pie"></i><span>Charts <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span> Echarts</span></a>
+                        <a href="#"><span> Charts.js</span></a>
+                        <a href="#"><span> D3</span></a>
+                    </div>
+                </li>
+                <li class="item" id="editors">
+                    <a href="#editors" class="menu-btn">
+                        <i class="fas fa-text-height"></i><span>Editors <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span> TinyMCE</span></a>
+                        <a href="#"><span> CKEditor</span></a>
+                    </div>
+                </li>
+                <li class="item" id="tables-data">
+                    <a href="#tables-data" class="menu-btn">
+                        <i class="fas fa-th-large"></i><span>Tables & Data <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span> Smart Table</span></a>
+                        <a href="#"><span> Tree Grid</span></a>
+                    </div>
+                </li>
+                <li class="item" id="miscellaneous">
+                    <a href="#miscellaneous" class="menu-btn">
+                        <i class="fas fa-random"></i><span>Miscellaneous <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span> 404</span></a>
+                    </div>
+                </li>
+                <li class="item" id="auth">
+                    <a href="#auth" class="menu-btn">
+                        <i class="fas fa-lock"></i><span>Auth <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span> Login</span></a>
+                        <a href="#"><span> Register</span></a>
+                        <a href="#"><span> Request Password</span></a>
+                        <a href="#"><span> Reset Password</span></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-info-circle"></i><span>About</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <!--sidebar end-->
+        <!--main container start-->
+        <div class="main-container">
+            <div class="card">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+        <!--main container end-->
+    </div>
+    <!--wrapper end-->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+		    $(".sidebar-btn").click(function(){
+			    $(".wrapper").toggleClass("collapse");
+		    });
+	    });
+	</script>
+</body>{% load static %}
+</html>
